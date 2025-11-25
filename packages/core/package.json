@@ -1,0 +1,45 @@
+{
+  "name": "@universal-auth/core",
+  "version": "1.0.0",
+  "description": "Core authentication logic for universal auth module with AWS Cognito",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "authentication",
+    "aws",
+    "cognito",
+    "auth",
+    "universal",
+    "typescript"
+  ],
+  "author": "Gaurav Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobigaurav/universal-auth.git",
+    "directory": "packages/core"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1400.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

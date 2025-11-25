@@ -1,0 +1,14 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "universal-auth-stack"
+s3_bucket = ""
+s3_prefix = "universal-auth-stack"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+resolve_s3 = true
+profile = "mypocprofile"
+disable_rollback = true

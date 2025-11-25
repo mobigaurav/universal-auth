@@ -1,0 +1,11 @@
+{
+  "name": "@universal-auth/aws-backend",
+  "version": "1.0.0",
+  "description": "AWS SAM backend for universal auth module (Python)",
+  "scripts": {
+    "build": "sam build",
+    "deploy": "sam deploy --guided",
+    "local": "sam local start-api",
+    "test": "python -m pytest tests/"
+  }
+}

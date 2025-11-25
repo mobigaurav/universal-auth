@@ -1,0 +1,31 @@
+{
+  "name": "universal-auth-module",
+  "version": "1.0.0",
+  "description": "Reusable authentication module for React and React Native with AWS backend",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run build:packages",
+    "build:packages": "npm run build --workspace=packages/core && npm run build --workspace=packages/react",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf packages/*/dist examples/*/dist",
+    "dev:web": "cd examples/web-demo && npm run dev",
+    "dev:mobile": "cd examples/mobile-demo && npm start"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "lerna": "^7.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
