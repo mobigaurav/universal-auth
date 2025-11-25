@@ -1,9 +1,17 @@
 {
   "name": "@universal-auth/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core authentication logic for universal auth module with AWS Cognito",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist/**/*",
     "README.md"
