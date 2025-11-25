@@ -9,8 +9,8 @@
     "vercel-build": "vite build"
   },
   "dependencies": {
-    "@universal-auth/core": "^1.0.2",
-    "@universal-auth/react": "^1.0.2",
+    "@universal-auth/core": "^1.0.3",
+    "@universal-auth/react": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

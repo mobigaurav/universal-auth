@@ -1,7 +1,8 @@
 {
   "name": "@universal-auth/react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React components and hooks for universal auth module",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,7 +40,7 @@
     "directory": "packages/react"
   },
   "dependencies": {
-    "@universal-auth/core": "^1.0.2"
+    "@universal-auth/core": "^1.0.3"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
