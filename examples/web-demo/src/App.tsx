@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AuthService } from '@universal-auth/core';
-import { AuthProvider, useAuth } from '@universal-auth/react';
+import { AuthProvider, LoginForm, EmailVerificationForm, useAuth } from '@universal-auth/react';
 import { RegisterForm } from './components/RegisterForm';
-import { StyledLoginForm } from './components/StyledLoginForm';
-import { StyledEmailVerificationForm } from './components/StyledEmailVerificationForm';
 import { ForgotPasswordForm } from './components/ForgotPasswordForm';
 import { Dashboard } from './components/Dashboard';
 import { authConfig as defaultAuthConfig } from './config';
@@ -171,7 +169,7 @@ const AuthFlow: React.FC = () => {
 
         {currentView === 'login' && (
           <div>
-            <StyledLoginForm onSuccess={handleLoginSuccess} />
+            <LoginForm onSuccess={handleLoginSuccess} />
             <div style={switchTextStyle}>
               <button 
                 onClick={() => setCurrentView('forgot-password')}
@@ -204,7 +202,7 @@ const AuthFlow: React.FC = () => {
         )}
 
         {currentView === 'verify-email' && (
-          <StyledEmailVerificationForm 
+          <EmailVerificationForm 
             email={pendingVerificationEmail}
             onSuccess={handleEmailVerificationSuccess}
             onResendSuccess={() => console.log('Verification code resent')}
