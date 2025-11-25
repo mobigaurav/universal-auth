@@ -1,9 +1,13 @@
-// Replace these with your actual AWS deployment outputs
+// Default configuration - can be overridden via URL parameters
 export const authConfig = {
-  region: '',
-  userPoolId: '', // Replace with your User Pool ID
-  userPoolClientId: '', // Replace with your Client ID
-  apiEndpoint: '', // Replace with your API endpoint
+  region: 'us-east-1',
+  userPoolId: '', // Will be provided via URL config parameter
+  userPoolClientId: '', // Will be provided via URL config parameter
+  apiEndpoint: '', // Will be provided via URL config parameter
   requireEmailVerification: true,
-  enablePersonaSelection: true
+  enablePersonaSelection: true,
+  theme: {
+    primaryColor: '#667eea',
+    companyName: 'Universal Auth'
+  }
 };
